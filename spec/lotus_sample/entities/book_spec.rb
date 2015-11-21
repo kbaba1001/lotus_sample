@@ -1,3 +1,7 @@
 RSpec.describe Book do
-  # place your tests here
+  it 'can be initialised with attributes' do
+    book = Book.new(title: 'Refactoring')
+
+    expect(book.title).to eq('Refactoring')
+  end
 end
