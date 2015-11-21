@@ -1,0 +1,17 @@
+db:
+  image: postgres
+web:
+  build: .
+  command: bundle exec lotus server
+  volumes:
+    - .:/lotus_sample
+  ports:
+    - "2300:2300"
+  links:
+    - db
+  volumes_from:
+    - bundle
+bundle:
+  image: lotussample_web
+  volumes:
+    - /bundle
