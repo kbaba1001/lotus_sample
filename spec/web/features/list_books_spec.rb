@@ -5,7 +5,7 @@ describe 'List books' do
     visit '/books'
 
     within '#books' do
-      expect(page.has_css?('.book', count: 2)).to 'Expected to find 2 books'
+      expect(page.has_css?('.book', count: 2)).to be(true)
     end
   end
 end
