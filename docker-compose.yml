@@ -2,7 +2,7 @@ db:
   image: postgres
 web:
   build: .
-  command: bundle exec lotus server
+  command: bundle exec lotus server --host='0.0.0.0' --port=2300
   volumes:
     - .:/lotus_sample
   ports:
