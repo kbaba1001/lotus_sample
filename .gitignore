@@ -9,6 +9,8 @@
 /tmp/
 /build/
 
+*.sqlite3
+
 ## Environment normalisation:
 /.bundle/
 
