@@ -1,4 +1,4 @@
-get '/books', to: 'books#create'
+post '/books', to: 'books#create'
 get '/books/new', to: 'books#new'
 get '/books', to: 'books#index'
 # Configure your routes here

@@ -9,6 +9,7 @@
 /tmp/
 /build/
 
+.byebug_history
 *.sqlite3
 
 ## Environment normalisation:
