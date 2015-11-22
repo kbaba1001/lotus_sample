@@ -15,6 +15,7 @@ describe 'Books' do
       click_button 'Create'
     end
 
+    # form によって作成されたデータが一覧で表示されることを確認
     expect(current_path).to eq('/books')
     expect(page.has_content?('New book')).to eq(true)
   end
