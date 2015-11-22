@@ -10,6 +10,7 @@ gem 'lotus-model', '~> 0.5'
 gem 'sqlite3'
 
 group :test do
+  gem 'byebug', group: :development
   gem 'rspec'
   gem 'capybara'
 end
