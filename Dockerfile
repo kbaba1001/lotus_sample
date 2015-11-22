@@ -1,5 +1,8 @@
 FROM ruby:2.2.3
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs npm nodejs-legacy graphviz
+
+RUN apt-get update -qq
+RUN apt-get install -y sqlite libsqlite3-dev
+RUN apt-get install -y build-essential libpq-dev nodejs npm nodejs-legacy graphviz
 RUN npm install -g phantomjs
 
 ENV APP_HOME /lotus_sample
