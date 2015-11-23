@@ -10,7 +10,6 @@ gem 'haml'
 gem 'sqlite3'
 
 group :test do
-  gem 'html2haml'
   gem 'byebug', group: :development
   gem 'rspec'
   gem 'capybara'
