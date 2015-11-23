@@ -5,11 +5,12 @@ gem 'rake'
 
 gem 'lotusrb',     '0.5.0'
 gem 'lotus-model', '~> 0.5'
-
+gem 'haml'
 
 gem 'sqlite3'
 
 group :test do
+  gem 'html2haml'
   gem 'byebug', group: :development
   gem 'rspec'
   gem 'capybara'
