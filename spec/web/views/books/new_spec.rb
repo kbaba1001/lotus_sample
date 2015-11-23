@@ -10,7 +10,7 @@ end
 describe Web::Views::Books::New do
   let(:params) { NewBookParams.new({}) }
   let(:exposures) { {params: params} }
-  let(:template)  { Lotus::View::Template.new('apps/web/templates/books/new.html.erb') }
+  let(:template)  { Lotus::View::Template.new('apps/web/templates/books/new.html.haml') }
   let(:view)      { described_class.new(template, exposures) }
   let(:rendered)  { view.render }
 

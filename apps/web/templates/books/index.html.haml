@@ -1,0 +1,9 @@
+%h1 Bookshelf
+%h2 All books
+- if books.any?
+  - books.each do |book|
+    .book
+      %h2= book.title
+      %p= book.author
+- else
+  %p.placeholder There are no books yet.
